@@ -245,6 +245,10 @@ print(result)
 # es zu Informationsverlust kommen, wenn auf 1 gekippte Bits
 # auf der rechten Seite "rausfallen".
 
-# 0000 0000
-# 0000 0011
-# 0000 0011 & 0000 0010 Flag- System
+# Flag- System
+# 0000 0000 -> kein Bit gesetzt
+# 0000 0011 -> zwei Bits gesetzt
+# 0000 0011 & 0000 0010 -> ist das Bit 2^1 gesetzt? True
+
+# Wird häufig verwendet, um verschiedene Berechtigungen
+# abzubilden.
