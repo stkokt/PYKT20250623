@@ -6,6 +6,7 @@ print(c)            # Ausgabe von c: "a ist 10"
 print(type(c))      # Ausgabe des Typs von c: <class 'str'>
 
 print(a.to_bytes()) # Anwendung einer Methode der Klasse 'int'
+print(c.islower())  # Anwendung einer Methode der Klasse 'str'
 print(int("01"))    # Konvertierung eines Strings zu einem Integer
 # Das ist natürlich nur dann möglich, wenn der String zu einem Integer 
 # umgewandelt werden kann. int("Bockwurstsalat") wirft euch einen Fehler
