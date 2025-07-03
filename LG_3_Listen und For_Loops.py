@@ -54,7 +54,7 @@ listeA = [15, 7, 39, 13, 41, 21, 20, 4, 13,
 
 print("\nAufgabe 1\n")
 for zahl in listeA:
-    print(zahl, end = ",")
+    print(zahl, end = " ")
 print()
 
 # Aufgabe 2: 
