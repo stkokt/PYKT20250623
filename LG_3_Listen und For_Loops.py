@@ -200,6 +200,7 @@ suche_c = "L"
 suche_d = "Schröder"
 
 print("\nAufgabe 8\n")
+gefunden = False
 # Aufgabenteil a
 for name in namen:
     if name==suche_a:
