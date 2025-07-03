@@ -33,6 +33,13 @@ print("\nKino- Aufgabe\n")
 
 kino = input("Hast du Lust ins Kino zu gehen? j/n\t")
 
+"""
+# Wenn man mehrere positive Antwortmöglichkeiten vorgeben will:
+ja_antworten = "jJjaJaYesyes" # aber auch "es" funktioniert
+# besser als Liste formulieren:
+ja_antworten = ["j","J","ja","Ja","Yes","yes"]
+if kino in ja_antworten
+"""
 if kino == "j":
     kino = input("Ist ein guter Film im Kino? j/n\t")
     if kino == "j":

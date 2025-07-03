@@ -65,7 +65,7 @@ print(int(kauderwelsch[13]) * 3)
 # 9. Ersetze alle Vorkommen des Buchstaben 'B' in der Variable 'kauderwelsch' mit '8'.
 
 print("\nAufgabe 9\n")
-print(kauderwelsch.replace("B","8"))
+kauderwelsch = kauderwelsch.replace("B","8")
 print(kauderwelsch)
 
 # 10. Finde eine geignete Methode, um die Variable 'unsinn' an den
@@ -91,4 +91,3 @@ print(bool(kauderwelsch.lower().count("oo")) and bool(unsinn.lower().count("oo")
 print(kauderwelsch.lower().find("oo")>=0 and unsinn.lower().find("oo")>=0)
 print("oo" in kauderwelsch.lower() and "oo" in unsinn.lower())
 
- 
