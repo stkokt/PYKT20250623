@@ -1,0 +1,33 @@
+Projekt Autowerkstatt
+
+Simuliere eine Autowerkstatt. Diese soll einen Servicekatalog 
+mit den verschiedenen Dienstleistungen haben. Diese Dienstleistungen
+sollen für verschiedene Fahrzeugtypen unterschiedliche Preise haben.
+
+Personen können sowohl nur Kunden sein, als auch Angestellte der 
+Werkstatt. Sind sie nur Kunden, haben sie folgende Attribute:
+
+- Name 
+- ihr Fahrzeug (Typ)
+- Kontostand (nimmt bei Serviceleistungen ab)
+- Kunde seit (Jahren)
+- Kundenrabatt basierend auf vorherigen Punkt
+
+Angestellte haben zusätzlich folgende Attribute:
+
+- Angestellt seit (Jahren)
+- Lohn basierend auf Stundenlohn + Bonus Betriebszugehörigkeit (Jahre)
+- Fester Angestelltenrabatt, wenn sie selbst Kunde sind
+
+Fahrzeuge sollen folgende Attribute haben:
+
+- Fahrzeugklasse (Motorad, Auto, LKW)
+- Fahrzeugtyp (Audi, Suzuki, MAN)
+- Alter des Fahrzeugs
+
+Die Simulation soll mit einem Dialog einleiten, in dem der Kunde
+nach den gewünschten Dienstleistungen gefragt wird und ihm anschließend
+ein Kostenvoranschlag gemacht wird, dem er zustimmen oder ihn ablehnen kann.
+stimmt er zu, wird sein Konto belastet und eine Gutschrift auf dem 
+Angestelltenkonto* erfolgt.
+* dazu muss ein Angestellter dem Auftrag zugewiesen werden.  

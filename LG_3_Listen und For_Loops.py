@@ -69,7 +69,7 @@ print(f"Erstes Element: {listeA[0]}, letztes Element: {listeA[-1]}")
 print("\nAufgabe 3\n")
 for zahl in listeA:
     if zahl % 2 == 0:
-        print(zahl, end = ",")
+        print(zahl, end = " ")
 print()
 
 # Aufgabe 4: 
@@ -222,8 +222,13 @@ search2list=[]
 for name in namen:
     if name.startswith(suche_c):
         search2list.append(name)
+# idx=0
 for name in search2list[0:3]:
     print(name, end=", ")
+    # idx+=1
+    # if idx == 2:
+        # break
+
 
 print()
 # Aufgabenteil d
