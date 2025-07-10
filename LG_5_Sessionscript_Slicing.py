@@ -10,6 +10,7 @@
 # iterable[1:5:2]   Index 1 bis inklusive Index 4 in 2er Schritten
 # iterable[1:5]     Index 1 bis inklusive Index 4
 # iterable[1::2]    Index 1 bis Ende in 2er Schritten
+# iterable[:5]      Anfang bis inklusive Index 4
 # iterable[:5:2]    Anfang bis inklusive Index 4 in 2er Schritten
 # iterable[::-1]    rückwärts vom letzten Index bis inklusive des ersten
 
