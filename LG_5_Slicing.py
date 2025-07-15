@@ -66,7 +66,7 @@ for q in range(s,e+1):
     # if s>len(monatsumsatz)-1:
     #     break
 
-# Aufgabe 4: Ordne die Zeichenfolge der Variable 'shuffled'
+# Aufgabe 4: Slice die Zeichenfolge der Variable 'shuffled'
 #    	     so, dass sie lautet: hey ho let's go!
 
 print("\nAufgabe 4\n")

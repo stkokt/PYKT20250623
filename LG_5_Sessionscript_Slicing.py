@@ -7,6 +7,7 @@
 # stop (Index, vor dem gestoppt wird)
 # step (Schrittweite)
 
+# Beispiele:
 # iterable[1:5:2]   Index 1 bis inklusive Index 4 in 2er Schritten
 # iterable[1:5]     Index 1 bis inklusive Index 4
 # iterable[1::2]    Index 1 bis Ende in 2er Schritten
