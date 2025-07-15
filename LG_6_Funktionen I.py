@@ -19,6 +19,12 @@ def flipcoin_1():
 
 print(flipcoin_1())
 
+import random
+def flipcoin_2():
+    return random.sample(["Kopf","Zahl","Kante","Gulli"],1)
+
+print(flipcoin_2())
+
 # Aufgabe 2: Schreibe eine Funktion, die mehrere Münzwurfe
 #            simuliert und die Häufigkeit von Kopf und Zahl
 #            ausgibt. Nutze dazu eine geeignete Methode des 
@@ -43,14 +49,14 @@ print("\nAufgabe 3\n")
 # Implementierung mit Liste oder Tuple als Parameter
 def linearFunktion_1(p1:list|tuple, p2:list|tuple):
     # m = (y2 - y1)/(x2 - x1)
-    m = (p2[1] - p1[1] / p2[0] - p1[0])
+    m = ((p2[1] - p1[1]) / (p2[0] - p1[0]))
     # Grundformel nach n umstellen
     # n = f(x) - mx
     n = p1[1] - m*p1[0]
     print(f"Die Formel der Geraden ist f(x) = {m}x + {n}. Die Y- Achse wird bei y = {n} geschnitten.")
     print(f"Die Formel der Geraden ist f(x) = {m}x {"+" if n>=0 else "-"} {abs(n)}. Die Y- Achse wird bei y = {n} geschnitten.")
 
-linearFunktion_1((5,7), (-2,3))
+linearFunktion_1((2,4), (1,0))
 
 
 
@@ -100,11 +106,12 @@ avgValues(leute)
 
 print("\nAufgabe 7\n")
 
-for k,v in leute.items():
-    if v == max(leute.values()):
-        print(f"Die älteste Person ist {k} mit {v} Jahren.")
+def maxVal(elems:dict):
+    for k,v in elems.items():
+        if v == max(elems.values()):
+            print(f"Die älteste Person ist {k} mit {v} Jahren.")
 
-
+maxVal(leute)
 
 # Aufgabe 8: Schreibe die Funktion aus Aufgabe 7 so um,
 #            dass sie mehrere Personen ausgeben kann, die
