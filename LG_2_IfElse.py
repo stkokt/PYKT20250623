@@ -1,5 +1,6 @@
 # Aufgabe 1: Setze folgenden Pseudocode in Python um:
 
+# Pseudocode (erst verwenden, wenn euch das Flussdiagramm zu schwer ist):
 """
 BEGIN
 
