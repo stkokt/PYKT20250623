@@ -83,7 +83,7 @@ wb1 = xl.load_workbook(path)
 # Bei einer neu erstellten Excel- Datei heißt die erste Tabelle 'Sheet'.
 ws1 = wb1['Sheet']
 # Diese Bezeichnung wollen wir ändern:
-ws1.title = "Einkommen 1970-2022"
+ws1.title = "Beschäftigte 1970-2022"
 
 # In diese Tabelle tragen wir unsere Werte ein.
 for row_idx, val in enumerate(values4, start=1):
