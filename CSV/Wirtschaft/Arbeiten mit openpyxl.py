@@ -36,9 +36,9 @@ values3 = [[x.value for x in cell] for cell in rangeXL]
 # wir in eine neue Variable.
 values4 = [[x for x in line] for line in values3 if line[0]!=None]
 
-# print(values4)
+#print(values4)
 
-# 2005 fand eine Revision ab dem Jahr 1991 statt. Für das Jahr 1991 finden sich 
+# 2019 fand eine Revision ab dem Jahr 1991 statt. Für das Jahr 1991 finden sich 
 # zwei Datensätze im Datenblatt. Diese beiden Datensätze schreiben wir uns mal in 
 # eine weitere Variable, um sie weiter zu verarbeiten.
 
@@ -60,7 +60,7 @@ del values4[firstIdx_1991:firstIdx_1991+2]
 
 # ...und setzen unsere interpolierte Datenreihe an diese Stelle:
 values4.insert(firstIdx_1991, values1991avg)
-#print(values4)
+print(values4)
 
 # Wir legen in unserem Verzeichnis eine neue Excel- Datei an und speichern sie.
 myWB = xl.Workbook('myWorkbook.xlsx')

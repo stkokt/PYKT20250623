@@ -14,10 +14,10 @@ from random import randint
 # Zum Nachweis, wie effizient der Suchalgorithmus ist,
 # spielen wir das ganze 10 Mal durch.
 for n,runs in enumerate(range(10)):
-    zufallszahl = randint(1,100)
+    zufallszahl = randint(1,10000)
     geraten = 0
     untere_intervallgrenze = 1
-    obere_intervallgrenze = 101
+    obere_intervallgrenze = 10001
     versuche = 0
     print(f"Run {n+1}\nDie Zufallszahl lautet: {zufallszahl}")
     # Wetten, dass wir es immer innerhalb von 10 Versuchen schaffen?
