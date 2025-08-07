@@ -35,8 +35,8 @@ print(listeA[:len(listeA)//2 if len(listeA) % 2 == 0 else len(listeA)//2 + 1])
 # - range()- Objekte
 # - Bytearray (wird im Kurs aber nicht behandelt)
 
-a_string = "Wassili ist voll der Monsterarsch!"
-print(a_string[0:4]+a_string[18:21]+a_string[21::13]+a_string[28:])
+a_string = "HPayltlhoo_n"
+print(a_string[0:-1:2] + a_string[1::2])
 
 a_Tuple = 1,2,3,4,5
 print(a_Tuple[2:])
