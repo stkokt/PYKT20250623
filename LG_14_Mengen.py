@@ -3,9 +3,9 @@ A = {1,2,3,4}
 B = {3,4,5,6}
 #Berechne die Mengen C = A∪B, D = A∩B, E = A∖B, F = AΔB und gib diese aus.
 # Lösung: Anfang
-C = A.union(B)
-D = A.intersection(B)
-E = A.difference(B)
+C = A.union(B) # oder A|B
+D = A.intersection(B) # oder A & B
+E = A.difference(B) # oder A-B
 F = A.symmetric_difference(B)
 print(f"{A}∪{B}={C}")
 print(f"{A}∩{B}={D}")
@@ -70,14 +70,6 @@ def huelle_pruefen(menge: set[(int,int)]) -> bool:
         if (b,a) not in menge:
             return False
     return True
-
-def huelle_pruefen2(menge: set[(int,int)]) -> bool:
-    for (a,b) in menge:
-        invers={b,a}
-        if invers.issubset(menge):
-            return True
-        else:
-            return False
 # Lösung: Ende
 
 # d) Prüfe die Korrektheit der Funktion anhand der Mengen A und B.
@@ -102,11 +94,13 @@ D = {5,6}
 # b) Überprüfe, dass C⊆A eingehalten wird.
 # Lösung: Anfang
 C = B.difference(D)
+print(C)
 print(C.issubset(A))
 # Lösung: Ende
 
 
 # Aufgabe 6: Symmetrische Differenz erzeugen
+print("\nAufgabe 6\n")
 C={2,5,8}
 B={1,2,3,4,5}
 
@@ -139,6 +133,7 @@ print(C == A.symmetric_difference(B))
 # Hinweis: Mengen können nur ineinander verschachtelt werden, wenn sie als frozensets(...) anstatt mittels {...} instanziiert werden.
 # z.B. anstatt 'menge = {1,2,{3,4,5},6,7})' schreibe 'menge = frozenset([1,2,frozenset([3,4,5]),6,7])'.
 # Lösung: Anfang
+print("\nAufgabe 7\n")
 def potenzmenge_iterativ(menge: frozenset[int]) -> frozenset[frozenset[int]]:
     potenzmengenliste = [menge]
     
@@ -146,13 +141,13 @@ def potenzmenge_iterativ(menge: frozenset[int]) -> frozenset[frozenset[int]]:
         for element in menge:
             potenzmengenliste.append(frozenset(menge) - {element})
 
-    print(potenzmengenliste)
+    #print(potenzmengenliste)
     return frozenset(potenzmengenliste)
 
-A = frozenset({1,2,3,4})
+A = frozenset({1,2,3})
 P = potenzmenge_iterativ(A)
 for m in P:
     print(m)
-print(P)
+#print(P)
 
 # Lösung: Ende
