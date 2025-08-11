@@ -1,18 +1,13 @@
-# Lese diese Dateien ein
-# - Erwerbstaetige1
-# - Konsumentwicklung
-# - Lohnentwicklung
+# Lese die Datei Erwerbstaetige.csv ein
 
-# Bilde diese Ratios:
+# Bilde die Ratio:
 # Anteil der Land-, Forst- und Fischereiarbeiter sowie der Dienstleister an den Gesamtbeschäftigten.
-# Anteil der Wohn- sowie der Lebenserhaltungskosten (Nahrung/Genuss) am Gesamtkonsum.
-# Verhältnis von Netto- zu Bruttolöhnen. 
-# 
+
 # Recherchiere, wie du diese Ratios in eine CSV- Datei zurückschreiben kannst. 
 
 import csv
 # Einlesen einer CSV-Datei mit csv.DictReader
-with open('Erwerbstaetige1.csv', mode='r', newline='') as file:
+with open('Erwerbstaetige.csv', mode='r', newline='') as file:
     csv_dict_reader = csv.DictReader(file, delimiter=";")
     dataErwerb = list(csv_dict_reader)
 
@@ -21,10 +16,10 @@ with open('Erwerbstaetige1.csv', mode='r', newline='') as file:
 jahre = [ds['Jahr'] for ds in dataErwerb]
 # print(jahre)
 
-ratioLFF = [round(float(ds['LandForstFisch'])/float(ds['Insgesamt']),5) for ds in dataErwerb]
+ratioLFF = [round(float(ds['LandForstFisch'].replace(" ",""))/float(ds['Insgesamt'].replace(" ","")),5) for ds in dataErwerb]
 #print(ratioLFF)
 
-ratioDL = [round(float(ds['DienstAll'])/float(ds['Insgesamt']),5) for ds in dataErwerb]
+ratioDL = [round(float(ds['DienstAll'].replace(" ",""))/float(ds['Insgesamt'].replace(" ","")),5) for ds in dataErwerb]
 #print(ratioDL)
 
 ratios = list(zip(jahre, ratioLFF, ratioDL))
